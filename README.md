@@ -20,5 +20,17 @@ npm run build
 npm run lint
 ```
 
+### Bootstrap 5.xx ver
+```
+npm install bootstrap@5.2.2
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+npm install vue bootstrap-vue bootstrap
+```
+
+
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
