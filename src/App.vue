@@ -23,8 +23,8 @@ export default {
     }
   },
   components : {
-    Header,
-    List,
+    Header : Header,  //Header 컴포넌트
+    List : List,  //블로그 게시물 제목,내용,게시날
   }
 }
 </script>

@@ -1,7 +1,8 @@
 <template>
-  <div v-for="BlogData">
-    <h2>{{BlogData[0].title}}</h2>
-    <p>{{BlogData[0].date}}</p>
+  <div v-for="BolgList in BlogData" :key="BolgList">
+    <h2>{{BolgList.title}}</h2>
+    <p>{{BolgList.content}}</p>
+    <p>{{BolgList.date}}</p>
   </div>
 </template>
 
