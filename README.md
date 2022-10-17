@@ -31,6 +31,20 @@ npm install vue bootstrap-vue bootstrap
 ```
 
 
+### should always be multi-word 오류 packge.json rules에 넣기
+```
+"vue/multi-word-component-names": "off"
+```
+
+
+### 라우터 설치 
+```
+npm install vue-router@4
+
+```
+
+
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
