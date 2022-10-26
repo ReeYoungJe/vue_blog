@@ -2,14 +2,8 @@
   <Header/>
 
 
-  <div class="container mt-4">
-    <h5>개발자 블로그 </h5>
-    <p>Vue 로 만듬</p>
-  </div>
+  <router-view :BlogData="BlogData"/>
 
-  <div>
-    <router-view :BlogData="BlogData" />
-  </div>
 
 </template>
 
@@ -21,13 +15,13 @@ import BlogData from "./assets/data";
 
 export default {
   name: 'App',
-  data(){
-    return{
-      BlogData : BlogData,
+  data() {
+    return {
+      BlogData: BlogData,
     }
   },
-  components : {
-    Header : Header,  //Header 컴포넌트
+  components: {
+    Header: Header,  //Header 컴포넌트
   }
 }
 </script>
