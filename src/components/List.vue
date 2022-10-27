@@ -2,9 +2,9 @@
   <TopBg/>
   <div class="listWrap" >
     <ul>
-      <li v-for="BolgList in BlogData" :key="BolgList.number">
-        <span class="idx">{{BolgList.number}}</span>
-          <router-link :to="'/detail/'+BolgList.number">{{ BolgList.title }}</router-link>
+      <li v-for="(BolgList, i) in BlogData" :key="BolgList.number">
+        <span class="idx">{{i + 1}}</span>
+          <router-link :to="'/detail/'+i">{{ BolgList.title }}</router-link>
          <p class="date">{{ BolgList.date }}</p>
       </li>
     </ul>

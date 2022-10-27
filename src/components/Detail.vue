@@ -2,14 +2,8 @@
 
   <div>
     <TopBg/>
-    <div class="">
-
-    </div>
-
-    <p @click="$router.go(-1)">◀</p>
-
     <div class="no">
-      <p>{{ $route.params.id }}번 게시물</p>
+      <p>{{ BlogData[$route.params.id].number }}번 게시물</p>
     </div>
     <div class="title">
       <h2>{{ BlogData[$route.params.id].title }}</h2>
@@ -17,6 +11,7 @@
     <div class="content">
       <div>{{ BlogData[$route.params.id].content }}</div>
     </div>
+
 
   </div>
 
@@ -35,6 +30,7 @@ export default {
 </script>
 
 <style scoped>
+.center {text-align: center; margin-top:30px;}
 .no{text-align: center}
 .title{text-align: center; padding-bottom: 30px; margin-bottom:40px; border-bottom: 1px solid #ddd;}
 .content{ text-align: center;}
